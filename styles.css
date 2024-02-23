@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #0e0404;
+    color: #189fc9;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    
+    
+    
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 30px;
+}
+
+.section-curtains {
+    /* Styles specific to the Curtains section */
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+.section-carpets {
+    /* Styles specific to the Carpets section */
+    background-color: #e8e8e8;
+    padding: 30px;
+}
+
+.section-beddings {
+    /* Styles specific to the Beddings section */
+    background-color: #d8d8d8;
+    padding: 40px;
+}
+
+    
+.section-curtain1-desc {
+    margin-bottom: 40px;
+    background-color: #e8e8e8;
+    padding: 30px;
+    text-align: left;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px; /* Add gap between products */
+}
+
+.product {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.product img {
+    width: 100%; /* Make image fill product container */
+    height: 200px; /* Set image height */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.2em; /* Increase font size */
+}
+.product-slider {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to each image */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar */
+    -ms-overflow-style: none; /* Hide scrollbar on IE/Edge */
+    white-space: nowrap; /* Prevent wrapping to new line */
+}
+
+.product-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar on WebKit browsers */
+}
+
+.product-slider img {
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover;
+    scroll-snap-align: start; /* Snap each image to the start */
+    margin-right: 10px; /* Add space between images */
+}
+
+
+.product p {
+    margin-bottom: 10px;
+    color: #888; /* Lighter text color */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center-align button */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
