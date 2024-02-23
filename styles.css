@@ -46,6 +46,21 @@ main {
     padding: 30px;
 }
 
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 16px; /* Increase font size for header name on smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Reduce margin between navigation items */
+    }
+}
+
 .section-curtains {
     /* Styles specific to the Curtains section */
     background-color: #f8f8f8;
